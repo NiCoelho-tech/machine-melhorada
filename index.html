@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Base Hacker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de Base</h1>
+
+      <input
+        type="text"
+        id="input-number"
+        placeholder="Digite o número"
+      /><br />
+
+      <select id="select_base1">
+        <option value="10">Decimal</option>
+        <option value="2">Binário</option>
+        <option value="8">Octal</option>
+        <option value="16">Hexadecimal</option></select
+      ><br />
+
+      <select id="select_base2">
+        <option value="10">Decimal</option>
+        <option value="2">Binário</option>
+        <option value="8">Octal</option>
+        <option value="16">Hexadecimal</option>
+      </select>
+      <br /><br />
+
+      <button onclick="convert()">Converter</button>
+
+      <div id="terminal-popup" class="popup">
+        <div class="terminal">
+          <pre id="terminal-text"></pre>
+        </div>
+      </div>
+      
+      <div id="big-terminal-popup" class="big-popup popup">
+        <div class="big-terminal terminal" id="big-terminal" tabindex="0">
+          <pre id="terminal-text" class="code"></pre>
+        </div>
+      </div>
+
+      <p id="conversion-result"></p>
+
+      <footer>
+        <p>
+          Desenvolvido por
+          <a href="https://github.com/NiCoelho-tech">Nicolas Coelho</a>
+        </p>
+        <p>| Copyright &copy; 2024 - Todos os direitos reservados</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
